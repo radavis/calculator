@@ -1,11 +1,7 @@
-div {
-    height: 100px;
-    width: 100px;
-    display: inline-block;
-    background-color: #F38630;
-    border-radius: 5px;
+button {
+  width: 2.5em;
 }
 
-#blue {
-    background-color: #A7DBD8;
+#display {
+  text-align: right;
 }

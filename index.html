@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <title>Math Wiz</title>
+  <title>Simple Calculator</title>
     <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
 
     <script src="http://code.jquery.com/jquery-latest.min.js"
@@ -11,11 +11,40 @@
             type='text/javascript' ></script>
   </head>
   <body>
-    <input type="text" size="3" id="number-1"></input>
-    <span id="operator"> + </span>
-    <input type="text" size="3" id="number-2"></input>
-    =
-    <input type="text" size="3" id="result"></input>
-    <button>Solve</button>
+    <table class="calculator">
+      <tr>
+        <input type="text" id="display"></input>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><button id="C">C</button></td>
+      </tr>
+      <tr>
+        <td><button id="7">7</button></td>
+        <td><button id="8">8</button></td>
+        <td><button id="9">9</button></td>
+        <td><button id="/">/</button></td>
+      </tr>
+      <tr>
+        <td><button id="4">4</button></td>
+        <td><button id="5">5</button></td>
+        <td><button id="6">6</button></td>
+        <td><button id="*">*</button></td>
+      </tr>
+      <tr>
+        <td><button id="1">1</button></td>
+        <td><button id="2">2</button></td>
+        <td><button id="3">3</button></td>
+        <td><button id="+">+</button></td>
+      </tr>
+      <tr>
+        <td><button id="0">0</button></td>
+        <td><button id=".">.</button></td>
+        <td><button id="=">=</button></td>
+        <td><button id="-">-</button></td>
+      </tr>
+    </table>
   </body>
 </html>
