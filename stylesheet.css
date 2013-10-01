@@ -5,3 +5,7 @@ button {
 #display {
   text-align: right;
 }
+
+#guess {
+  width: 6em;
+}

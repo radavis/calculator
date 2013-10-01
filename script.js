@@ -31,7 +31,14 @@ $(document).ready(function() {
       $display.val('');
 
     } else if (buttonPressed === '=') {
-      $display.val(calculate(parseFloat(register), parseFloat($display.val()), operator));
+      answer = calculate(parseFloat(register), parseFloat($display.val()), operator);
+      $display.val(answer);
+
+      if (answer == $('input#guess').val()) {
+        $('div.response').html('Great Job!');
+      } else {
+        $('div.response').html('Sorry, your guess was incorrect.');
+      }
 
     } else if (buttonPressed === 'C') {
       register = 0;
